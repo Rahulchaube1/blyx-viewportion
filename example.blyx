@@ -1,0 +1,14 @@
+use viewportion;
+
+fn main() {
+    let rows = 12.0;
+    let start = 11.0;
+    let height = 4.0;
+    let result = viewportion_slice(rows, start, height);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
